@@ -72,8 +72,9 @@ class MainActivity : AppCompatActivity() {
                 Toast.makeText(this,"Something went wrong while saving post", Toast.LENGTH_SHORT).show()
             } else {
                 Log.i(TAG, "Successfully saved post")
-                //findViewById<EditText>(R.id.et_description).setText("")
-                //findViewById<ImageView>(R.id.imageView).setImageDrawable(null)
+                Toast.makeText(this,"Successfully saved post", Toast.LENGTH_SHORT).show()
+                findViewById<EditText>(R.id.et_description).setText("")
+                findViewById<ImageView>(R.id.imageView).setImageDrawable(null)
             }
         }
     }
